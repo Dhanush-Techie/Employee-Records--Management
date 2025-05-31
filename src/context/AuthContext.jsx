@@ -20,7 +20,7 @@ function AuthProvider({ children }) {
 			import('../service/historyService').then(({ default: historyService }) => {
 				historyService.addHistory(email, 'login');
 			});
-			navigate('/dashboard/Home');
+			navigate('/Home');
 			Swal.fire({
 				title: 'Success',
 				text: 'Login is successful',

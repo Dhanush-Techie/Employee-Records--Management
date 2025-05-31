@@ -1,5 +1,4 @@
-import { EmployeeProvider } from '../context/EmployeeContext'; 
-import AddEmployee from '../component/AddEmployee';
+
 
 import { useState } from 'react'
 import { createContext } from 'react';
@@ -13,9 +12,13 @@ import { AuthProvider } from './context/AuthContext';
 import AppRoutes from './routes/AppRoutes';
 function App() {
   return (
-    <EmployeeProvider>
-      <AddEmployee />
-    </EmployeeProvider>
+    <>
+    
+    <AuthProvider>
+         <AppRoutes></AppRoutes>
+      </AuthProvider>     
+    </>
+
   );
 }
 
