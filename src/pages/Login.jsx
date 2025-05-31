@@ -73,7 +73,7 @@ export default function Login() {
                     </button>
                     <p className="text-center text-gray-400 text-sm mt-6">
                         Don't have an account? 
-                        <Link to="/sign-up" className="text-purple-300 font-medium hover:underline">
+                        <Link to="/Signup" className="text-purple-300 font-medium hover:underline">
                             Sign up
                         </Link>
                         {/* <a href="../pages/Signup" className="text-purple-300 font-medium hover:underline">Sign Up</a> */}

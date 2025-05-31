@@ -7,18 +7,15 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import AuthContext from './context/AuthContext';
 import { AuthProvider } from './context/AuthContext';
+import AppRoutes from './routes/AppRoutes';
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    {/* <AuthProvider>
-    </AuthProvider> */}
-    <AuthContext.Provider>
-      {/* <Login /> */}
-       <Signup></Signup>/
-    </AuthContext.Provider>
-         
+      <AuthProvider>
+         <AppRoutes></AppRoutes>
+      </AuthProvider>     
 
       
     </>
